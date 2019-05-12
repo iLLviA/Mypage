@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -23,8 +23,8 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
-    <v-toolbar
+    </v-navigation-drawer> -->
+    <!-- <v-toolbar
       :clipped-left="clipped"
       fixed
       app
@@ -61,8 +61,8 @@
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
-    <v-navigation-drawer
+    </v-content> -->
+    <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
       temporary
@@ -76,7 +76,22 @@
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
+    <v-toolbar>
+      <v-toolbar-title>
+        My page
+      </v-toolbar-title>
+      <v-spacer />
+      <v-toolbar-items>
+        <v-btn>GitHub repos</v-btn>
+        <v-btn></v-btn>
+      </v-toolbar-items>
+    </v-toolbar>  
+    <v-content>
+      <v-container>
+        <nuxt />
+      </v-container>
+    </v-content> 
     <v-footer
       :fixed="fixed"
       app
@@ -90,25 +105,25 @@
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      // clipped: false,
+      // drawer: false,
+      // fixed: false,
+      // items: [
+      //   {
+      //     icon: 'apps',
+      //     title: 'Welcome',
+      //     to: '/'
+      //   },
+      //   {
+      //     icon: 'bubble_chart',
+      //     title: 'Inspire',
+      //     to: '/inspire'
+      //   }
+      // ],
+      // miniVariant: false,
+      // right: true,
+      // rightDrawer: false,
+      // title: 'Vuetify.js'
     }
   }
 }
